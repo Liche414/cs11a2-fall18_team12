@@ -19,7 +19,7 @@ public class FinalProject {
       if (userChoice == 1){ //we will continue to make an else if list for every method we choose to do
         //ReadaFileTestMethod(filename); --> this method doesn't work
       } else if (userChoice == 2){
-        //testLib();
+        PrintMovieList();
       } else {
         System.out.println("That's not a valid input... Please choose one of the numbers choices given");
       }
@@ -46,9 +46,8 @@ public class FinalProject {
   */
 
 
-  /*
   //from TextLib Program
-  public static void testLib(){
+  public static void PrintMovieList(){
     String contents = readFileAsString("Movies.txt");
     String[] lines = contents.split("\\n");
     String[] words = splitIntoWords(contents);
@@ -60,5 +59,4 @@ public class FinalProject {
     System.out.printf("Movies contains %d words%n",words.length);
     System.out.printf("Movies contains %d lines%n%n",lines.length);
   }
-  */
 }
