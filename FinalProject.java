@@ -1,18 +1,14 @@
 public class FinalProject {
   public static void main(String[] args){
     System.out.println("Concordance generator");
-
-    String filename = "Mags.txt";
     String filename = "Movies.txt";
-    String word = "change";
     if (args.length > 1){
       filename = args[0];
       word = args[1];
     } else {
-      System.out.println("usage: java Concordance FILENAME WORD");
-      System.out.println("we assume you are looking for 'change' in Romeo and Juliet");
+      System.out.println("usage: java FinalProject FILENAME CATEGORY");
     }
-
+    String word = TextIO.getlnString();
     TextIO.readFile(filename); // start reading from the file!
 
     String line = " ";
