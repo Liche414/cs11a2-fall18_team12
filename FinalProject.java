@@ -13,18 +13,22 @@ public class FinalProject {
     //String word = TextIO.getlnString();
     System.out.println("Type 1 if you want to read the list of movies (currently a test method)");
     System.out.println("Type 2 if you want to do testlib()");
-    int userChoice = TextIO.getInt();
-    if (userChoice == 1){ //we will continue to make an else if list for every method we choose to do
-      ReadaFileTestMethod(filename);
-    } else if (userChoice == 2){
-      testLib();
-    } else {
-      System.out.println("That's not a valid input... Please choose one of the numbers choices given");
+    int userChoice = 0;
+    while ((userChoice < 1) && (userChoice > 2)){ //make this while loop repeat for every number outside our possible if/esle statements
+      userChoice = TextIO.getInt();
+      if (userChoice == 1){ //we will continue to make an else if list for every method we choose to do
+        //ReadaFileTestMethod(filename); --> this method doesn't work
+      } else if (userChoice == 2){
+        //testLib();
+      } else {
+        System.out.println("That's not a valid input... Please choose one of the numbers choices given");
+      }
     }
-
-}
+  }
 
   //From second half of Romeo and Juliet
+
+  /*
   public static void ReadaFileTestMethod(){
     TextIO.readFile(filename); // start reading from the file!
 
@@ -38,6 +42,11 @@ public class FinalProject {
       lineNumber++;
     }
   }
+
+  */
+
+
+  /*
   //from TextLib Program
   public static void testLib(){
     String contents = readFileAsString("RJ.txt");
@@ -51,5 +60,5 @@ public class FinalProject {
     System.out.printf("RJ contains %d words%n",words.length);
     System.out.printf("RJ contains %d lines%n%n",lines.length);
   }
-
+  */
 }
