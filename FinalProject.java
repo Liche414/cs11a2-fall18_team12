@@ -40,16 +40,16 @@ public class FinalProject {
   }
   //from TextLib Program
   public static void testLib(){
-    String contents = readFileAsString("RJ.txt");
+    String contents = readFileAsString("Movies.txt");
     String[] lines = contents.split("\\n");
     String[] words = splitIntoWords(contents);
-    System.out.printf("%n The first 200 words of Romeo and Juliet are: %n%n");
+    System.out.printf("%n How many movies would you like to me to print?: %n%n");
     for(int i=0;i<200; i++) {
       System.out.printf(words[i]+" ");
     }
-    System.out.printf("%n%nRJ.txt length is "+contents.length()+"%n");
-    System.out.printf("RJ contains %d words%n",words.length);
-    System.out.printf("RJ contains %d lines%n%n",lines.length);
+    System.out.printf("%n%nMovies.txt length is "+contents.length()+"%n");
+    System.out.printf("Movies contains %d words%n",words.length);
+    System.out.printf("Movies contains %d lines%n%n",lines.length);
   }
 
 }
