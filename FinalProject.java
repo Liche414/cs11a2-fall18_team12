@@ -17,7 +17,7 @@ public class FinalProject {
     while ((userChoice < 1) && (userChoice > 2)){ //make this while loop repeat for every number outside our possible if/esle statements
       userChoice = TextIO.getInt();
       if (userChoice == 1){ //we will continue to make an else if list for every method we choose to do
-        //ReadaFileTestMethod(filename); --> this method doesn't work
+        ReadAllTheMoviesInTheFile(filename);
       } else if (userChoice == 2){
         PrintMovieList();
       } else {
@@ -26,25 +26,23 @@ public class FinalProject {
     }
   }
 
-  //From second half of Romeo and Juliet
-
-  /*
   public static void ReadaFileTestMethod(){
     TextIO.readFile(filename); // start reading from the file!
-
     String line = " ";
     int lineNumber = 1;
     while (!TextIO.eof()){
       line = TextIO.getln();
-      if (line.contains(word)){ //|| line.contains(word2) --> find out why you had this before!!!!!!!!!!!!!!!!!!!!!!!!!!
-        System.out.printf("%4d %s%n", lineNumber, line);
-      }
       lineNumber++;
     }
+    /* get certain words
+    line = TextIO.getln();
+    if (line.contains(word)){ //|| line.contains(word2) --> find out why you had this before!!!!!!!!!!!!!!!!!!!!!!!!!!
+      System.out.printf("%4d %s%n", lineNumber, line);
+    }
+    lineNumber++;
+    */
+
   }
-
-  */
-
 
   //from TextLib Program
   public static void PrintMovieList(){
