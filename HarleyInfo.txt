@@ -1,3 +1,7 @@
 Name: Harley Maignant
 Github ID: Liche414
 Date: 11/5/2018
+
+Name: Cesar Guerra Castillo
+Github ID: cesarguerra98
+Date: 11/5/2018
