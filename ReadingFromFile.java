@@ -3,11 +3,18 @@
 import java.io.*;
 public class ReadingFromFile{
 	public static void main(String[] args) throws Exception{
-	// pass the path to the file as a parameter
-	FileReader fr = new FileReader("Movies.txt");
+		FileInputStream fstream = new FileInputStream("Movies.txt");
+		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
 
-	int i;
-	while ((i=fr.read()) != -1)
-	System.out.print((char) i);
-	}
+		String strLine;
+
+		//Read File Line By Line
+		while ((strLine = br.readLine()) != null)  	 {
+		  // Print the content on the console
+		  System.out.println (strLine);
+		}
+
+		//Close the input stream
+		br.close();
+}
 }
