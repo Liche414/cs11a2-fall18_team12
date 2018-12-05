@@ -26,7 +26,7 @@ public class FinalProject {
     }
   }
 
-  public static void ReadaFileTestMethod(){
+  public static void ReadAllTheMoviesInTheFile(String filename){
     TextIO.readFile(filename); // start reading from the file!
     String line = " ";
     int lineNumber = 1;
