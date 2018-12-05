@@ -44,3 +44,34 @@ public class QuizMaker{
       System.out.println("5) Take Quiz");
       System.out.println("6) Exit");
       System.out.println("Choose an option");
+
+      //Errors for the menu
+      do{
+        while(!sc.hasNextInt()){
+          sc.next();
+          System.out.println("Error: Invalid command. ");
+        }
+        go = sc.nextInt();
+        if(go<1||go>6){
+          System.out.println("Error: Invalid command. ");
+        }
+      } while(go<1 || go>6);
+      //Processes user's menu choice
+      //If user chooses to set number of questions:
+      if(go==1){
+        System.out.println("Enter a length for the quiz.");
+        if(questions>1){
+          go--;
+        }
+        //do loop checks for input errors
+            do{
+                while(!sc.hasNextInt()){
+                    sc.next();
+                    System.out.println("Error: Number of questions " + "must be a positive integer. ");
+                  }
+                  questions=sc.nextInt();
+                  if(questions<1){
+                    System.out.println("Error: Number of questions " + "must be a positive integer. ");
+                  }
+                } while(questions<1);
+              }
