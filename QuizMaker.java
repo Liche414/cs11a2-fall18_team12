@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class QuizMaker{
   public static void main(String[] args){
-    //Variables used for this quiz, feel free to change them to suit the quiz you want
+    //All the variables utilized for the quiz are listed here, the user can also change them to their liking
     int questions = 3;    //sets number of questions
     int minOp = 1;        //sets minimum operand
     int maxOp = 10;       //sets max operand
