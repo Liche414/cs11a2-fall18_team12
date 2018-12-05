@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class QuizMaker{
   public static void main(String[] args){
-    //Variables used for this quiz, feel free to change them to suit the quiz you want
+    //All the variables utilized for the quiz are listed here, the user can also change them to their liking
     int questions = 3;    //sets number of questions
     int minOp = 1;        //sets minimum operand
     int maxOp = 10;       //sets max operand
@@ -176,93 +176,93 @@ public class QuizMaker{
                 sc.next();
                 System.out.println("Error: Invalid answer.");
 
-              }
-            } while(!sc.hasNextInt());
-            useans=sc.nextInt();
-            if(useans==ans){
-              System.out.println("Correct!");
-              correct++;
-            }
-            else{
-              System.out.println("Incorrect");
-            }
-          }
-          //this is the code that handles the multiplication questions
-          if(ops.equals("*")){
-            System.out.println(ran1 + " * " + ran2);
+                            }
+                        } while(!sc.hasNextInt());
+                        useans=sc.nextInt();
+                        if(useans==ans){
+                            System.out.println("Correct!");
+                            correct++;
+                        }
+                        else{
+                            System.out.println("Incorrect");
+                        }
+                    }
+                    //this is the code that handles the multiplication questions
+                                        if(ops.equals("*")){
+                                            System.out.println(ran1 + " * " + ran2);
 
-            ans = ran1 * ran2;
-            do{
-              while(!sc.hasNextInt()){
-                sc.next();
-                System.out.println("Error: Invalid answer.");
+                                            ans = ran1 * ran2;
+                                            do{
+                                                while(!sc.hasNextInt()){
+                                                    sc.next();
+                                                    System.out.println("Error: Invalid answer.");
 
-              }
-            }while(!sc.hasNextInt());
-            useans=sc.nextInt();
-            if(useans==ans){
-              System.out.println("Correct!");
-              correct++;
-            }
-            else{
-              System.out.println("Incorrect");
-            }
-          }
-          //this is the code that handles division questions
-          if(ops.equals("/")){
-            ran1=rand.nextInt(maxOp+1-minOp) + minOp;
-            ran2=rand.nextInt(maxOp+1-minOp) + minOp+1;
-            System.out.println(ran1 + " / " + ran2);
+                                                }
+                                            }while(!sc.hasNextInt());
+                                            useans=sc.nextInt();
+                                            if(useans==ans){
+                                                System.out.println("Correct!");
+                                                correct++;
+                                            }
+                                            else{
+                                                System.out.println("Incorrect");
+                                            }
+                                        }
+                                        //this is the code that handles division questions
+                                        if(ops.equals("/")){
+                                            ran1=rand.nextInt(maxOp+1-minOp) + minOp;
+                                            ran2=rand.nextInt(maxOp+1-minOp) + minOp+1;
+                                            System.out.println(ran1 + " / " + ran2);
 
-            ans2 = (ran1*+1.00) / (ran2*1.00);
-            do{
-              while(!sc.hasNextDouble()){
-                sc.next();
-                System.out.println("Error: Invalid answer.");
+                                            ans2 = (ran1*+1.00) / (ran2*1.00);
+                                            do{
+                                                while(!sc.hasNextDouble()){
+                                                    sc.next();
+                                                    System.out.println("Error: Invalid answer.");
 
-              }
-            }while(!sc.hasNextDouble());
-            useans2=sc.nextDouble();
-            if(useans2>(ans2-.01) && useans2<(ans2+.01)){
-              System.out.println("Correct!");
-              correct++;
-            }
-            else{
-              System.out.println("Incorrect");
-            }
-          }
-          //this the code that handles mod questions
-          if(ops.equals("%")){
-            System.out.println(ran1 + " % " + ran2);
+                                                }
+                                            }while(!sc.hasNextDouble());
+                                            useans2=sc.nextDouble();
+                                            if(useans2>(ans2-.01) && useans2<(ans2+.01)){
+                                                System.out.println("Correct!");
+                                                correct++;
+                                            }
+                                            else{
+                                                System.out.println("Incorrect");
+                                            }
+                                        }
+                                        //this the code that handles mod questions
+                                        if(ops.equals("%")){
+                                            System.out.println(ran1 + " % " + ran2);
 
-            ans = ran1 % ran2;
-            do{
-              while(!sc.hasNextInt()){
-                sc.next();
-                System.out.println("Error: Invalid answer.");
+                                            ans = ran1 % ran2;
+                                            do{
+                                                while(!sc.hasNextInt()){
+                                                    sc.next();
+                                                    System.out.println("Error: Invalid answer.");
 
-              }
-            } while(!sc.hasNextInt());
-            useans=sc.nextInt();
-            if(useans==ans){
-              System.out.println("Correct!");
-              correct++;
-            }
-            else{
-              System.out.println("Incorrect");
-            }
-          }
-          theruns++;
-        }
-        System.out.println("You have completed the quiz! Your Score is: " + correct +
-        " out of " + theruns);
-        go=0;
-      }
-      //If user choses to exit program
-      if(go==6){
-        System.out.println("Good Riddance!");
-        System.exit(6);
-      }
-    }
-  }
-}
+                                                }
+                                            } while(!sc.hasNextInt());
+                                            useans=sc.nextInt();
+                                            if(useans==ans){
+                                                System.out.println("Correct!");
+                                                correct++;
+                                            }
+                                            else{
+                                                System.out.println("Incorrect");
+                                            }
+                                        }
+                                        theruns++;
+                                    }
+                                    System.out.println("You have completed the quiz! Your Score is: " + correct +
+                                            " out of " + theruns);
+                                    go=0;
+                                }
+                                //If user choses to exit program
+                                if(go==6){
+                                    System.out.println("Good Riddance!");
+                                    System.exit(6);
+                                }
+                            }
+                        }
+                    }
